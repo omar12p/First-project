@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(re.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.wrapping {
+  width: 400px;
+  min-height: 45px;
+  backdrop-filter: blur(50px);
+  border: solid 2px rgb(0 0 0 / 10%);
+  padding: 20px 40px;
+  border-radius: 20px;
+}
+.wrapping .input-box {
+  width: 100%;
+  height: 45px;
+  margin: 10px 0;
+  position: relative;
+}
+.wrapping .input-box input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: solid 2px rgb(0 0 0 / 10%);
+  border-radius: 40px;
+  padding: 20px 40px 20px 20px;  
+  outline: none;
+  font-size: 14px;
+  caret-color: aliceblue;
+  color: white;
+}
+input::placeholder {
+  color: white;
+  font-size: 14px;
+  opacity: 0.7;
+}
+.wrapping .input-box i {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+.wrapping .btn {
+  display: inline-block;
+  color: hwb(0 64% 34%);
+  width: 100%;
+  background-color: transparent;
+  font-size: 20px;
+  outline: none;
+  border: solid 2px rgb(0 0 0 / 10%);
+  border-radius: 40px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.wrapping .btn:hover {
+  background-color:#0f3a5a;
+  transition: 0.7s ease;
+  color: white;
+}
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+.wrapping .required{
+  color: white;
+  margin-right: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapping .required a {
+  text-decoration: none;
+  color: #800be0;
+  margin: 20px 0;
+}
+.wrapping .footer-login {
+  font-size: 15px;
+  color: white;
+  margin: 30px auto;
+}
+.wrapping .footer-login a {
+  color: #0f3a5a;
+  font-size: 17px;
+  margin-left: 10px;
+}
+.wrapping .footer-login a:hover {
+  color: red;
+  transition: 0.7s;
+}
